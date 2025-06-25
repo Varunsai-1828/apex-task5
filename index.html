@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Cart Online</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="utils.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__logo">
+      <img src="assests/logo.png" alt="Smart Cart Online" style="height: 40px;">
+    </div>
+    <nav class="header__nav">
+      <ul>
+        <li><a href="#home" class="nav-link" data-target="home">Home</a></li>
+        <li><a href="#products" class="nav-link" data-target="products">Products</a></li>
+        <li><a href="#cart" class="nav-link" data-target="cart">Cart <span id="cart-count">0</span></a></li>
+        <li><a href="#account" class="nav-link" data-target="account">Account</a></li>
+      </ul>
+    </nav>
+    <div class="header__search">
+      <input type="text" placeholder="Search for products...">
+      <button><i class="fas fa-search"></i></button>
+    </div>
+  </header>
+<main class="main">
+    <section id="home" class="section active">
+      <div class="hero">
+        <h1>Welcome to Smart Cart Online</h1>
+        <p>Shop the best deals online!</p>
+      </div>
+    </section>
+
+    <section id="products" class="section">
+      <h2>Top Products</h2>
+      <div class="products__grid" id="products-grid">
+        <!-- Products will be added by JS -->
+      </div>
+    </section>
+
+    <section id="cart" class="section">
+      <h2>Your Cart</h2>
+      <div class="cart-items" id="cart-items">
+        <!-- Cart items will be added by JS -->
+      </div>
+      <button class="clear-cart" id="clear-cart">Clear Cart</button>
+    </section>
+<section id="account" class="section">
+      <h2>Account Details</h2>
+      <div class="account-details">
+        <p><strong>Name:</strong> Varun</p>
+        <p><strong>Year:</strong> B.Tech 3rd Year</p>
+        <p><strong>Address:</strong> Guntur, Andhra Pradesh</p>
+        <p><strong>Email:</strong> varun.btech@example.com</p>
+        <p><strong>Phone:</strong> +91 98765 43210</p>
+        <p><strong>Interests:</strong> Web Development, E-commerce, Tech Gadgets</p>
+        <p><strong>About:</strong> Passionate about building user-friendly online stores and exploring new technologies.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__links">
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+    <div class="footer__copyright">
+      &copy; 2025 Smart Cart Online. All Rights Reserved.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
